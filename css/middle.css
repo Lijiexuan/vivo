@@ -1,0 +1,551 @@
+@media only screen and (min-width: 768px) and (max-width: 987px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	/*头部的样式*/
+	.header {
+		height: 80px;
+		width: 100%;
+		line-height: 80px;
+		overflow: hidden;
+		display: inline-block;
+		background: #FFFFFF;
+		position: fixed;
+		z-index: 2;
+	}
+	.header-logo-a {
+		width: 95px;
+		height: 80px;
+	}
+	.header-logo {
+		float: left;
+		margin-top: 25px;
+		display: inline-block;
+	}
+	.new-version {
+		text-decoration: none;
+		color: #008CD6;
+		font-size: 12px;
+		height: 26px;
+		line-height: 10px;
+		border-radius: 30px;
+		border: 1px #008CD6 solid;
+		padding: 0.7em;
+		margin-left: 20px;
+		display: inline-block;
+		float: left;
+		margin-top: 28px;
+	}
+	.new-version:hover {
+		text-decoration: none;
+		color: #008CD6;
+	}
+	.nav {
+		float: left;
+		height: 80px;
+		width: 65%;
+		margin-left: 75px;
+	}
+	.li {
+		list-style: none;
+		float: left;
+		display: inline-block;
+		height: 82px;
+		width: 84px;
+		line-height: 82px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.li-tiyanzhongxin {
+		width: 120px;
+	}
+	.li-Funtouch {
+		width: 150px;
+	}
+	.li:hover {
+		text-decoration: none;
+		background: #008CD6;
+		color: white;
+		transition: all 0.2s;
+	}
+	.header-nav-a {
+		height: 82px;
+		text-align: center;
+		font-size: 16px;
+		text-decoration: none;
+		color: #666666;
+	}
+	.header-icon {
+		height: 30px;
+		width: 30px;
+		border: 1px solid #666666;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 38px;
+		margin-left: 10px;
+		margin-top: 25px;
+		text-align: center;
+	}
+	.header-icon-kefu:hover {
+		background: #008CD6;
+	}
+	.header-icon-kefu:hover b {
+		background-position: -253px -92px;
+	}
+	.header-icon-service {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -35px 2px;
+	}
+	.header-icon-search {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: 1px 0px;
+	}
+	.header-icon-personal {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -17px 0px;
+	}
+	/*头部样式结束*/
+	/*产品*/
+	.product {
+		position: absolute;
+		top: 80px;
+		left: 0;
+		z-index: 9000;
+		display: none;
+		/*height: auto;*/
+		width: 100%;
+		/*height: 200px;*/
+		padding: 0;
+		padding-top: 80px;
+		/*margin-left: -7%;*/
+		text-align: center;
+		background: #FFFFFF;
+	}
+	.chanpin {
+		display: inline-block;
+		text-align: left;
+		margin-left: 10%;
+	}
+	.product-dd {
+		margin-top: 5px;
+	}
+	.product-content {
+		color: #666666;
+		text-decoration: none;
+		font-size: 16px;
+		transition: color 0.5s;
+	}
+	.product-content:hover {
+		color: #008CD6;
+		text-decoration: none;
+	}
+	/*轮播图样式*/
+	#vivo-carousel {
+		clear: all;
+		margin-top: 0px;
+		padding-top: 80px;
+	}
+	.carousel-indicators .active {
+		background-color: #008CD6;
+	}
+	.cheight{
+		height: 582px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.carousel1{
+		background-image: url(../img/vm-h-nn0703-bg-small.jpg);
+	}
+	.carousel2{
+		background-image: url(../img/vm-h-x9m-figure1-small.png);
+	}
+	.carousel3{
+		background-image: url(../img/d53cef438ff4b1d2711c32ae009c44c8.jpg);
+	}
+	.carousel4{
+		background-image: url(../img/vm-h-x9m-figure2-small.png);
+	}
+	.carouselchar{
+		position: relative;
+		top: 30%;
+		left: 40%;
+		width: 100%;
+		height: 100px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.crs-img-hw{
+		height: 100px;
+		width: 100px;
+	}
+	/*轮播图样式结束*/
+	/*三图并排样式*/
+	.bigbox {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		margin: 0px 0px;
+	}
+	.smallbox {
+		width: 70%;
+		height: auto;
+		display: inline-block;
+		float: left;
+		margin-left: 15%;
+	}
+	.smallbox-second{
+		width: 100%;
+		height: auto;
+		background: #000000;
+		float: left;
+	}
+	.pic-icon {
+		height: 82px;
+		width: 82px;
+		border: 1px solid #FFFFFF;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 82px;
+		text-align: center;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -420px 0px;
+		z-index: 1;
+		margin: 15% -40%;
+		position: absolute;
+	}
+	/*三图并排样式结束*/
+	/*活动样式*/
+	.activity {
+		margin-top: 100px;
+		overflow: hidden;
+	}
+	.activity-title {
+		font-size: 26px;
+		display: block;
+		margin-left: 8px;
+	}
+	.tuwen {
+		width: 49%;
+		height: auto;
+		display: inline-block;
+		float: left;
+		margin-left: 0.65%;
+	}
+	.activity-a {
+		width: 100%;
+		height: auto;
+		text-decoration: none;
+		display: inline-block;
+	}
+	.one {
+		font-size: 18px;
+		text-decoration: none;
+		color: #666666;
+	}
+	.two {
+		color: #666666;
+	}
+	.activity-a:hover p {
+		color: #008CD6;
+		text-decoration: none;
+	}
+	.three {
+		color: #666666;
+		margin-top: 15px;
+	}
+	.activity-mark {
+		color: #999999;
+	}
+	/*活动样式结束*/
+	/*动态样式*/
+	.trends {
+		margin-top: 100px;
+		overflow: hidden;
+	}
+	.trends-title {
+		font-size: 26px;
+		display: block;
+		margin-left: 8px;
+	}
+	.trends-smallblock {
+		width: 100%;
+		display: block;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.trends-img {
+		float: left;
+		margin-left: 10px;
+	}
+	.you {
+		float: left;
+		color: #666666;
+		margin-left: 10px;
+	}
+	.trends-smallblock:hover p {
+		color: #008CD6;
+	}
+	.news {
+		border-radius: 5px;
+		border: 1px solid;
+		font-size: 12px;
+		width: 50px;
+		height: 30px;
+		line-height: 20px;
+		padding: 4px;
+		font-style: normal;
+		background: #008CD6;
+		color: #FFFFFF;
+		margin-right: 5px;
+	}
+	.trends-h5 {
+		margin-top: 28px;
+		color: #999;
+	}
+	.trends-first-p {
+		white-space: nowrap;
+		overflow: hidden;
+		width: 90%;
+		text-overflow: ellipsis;
+		color: #222222;
+		font-size: 16px;
+	}
+	/*动态样式结束*/
+	/*媒体样式*/
+	.medium {
+		/*clear: both;*/
+		margin-top: 150px;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+	.medium-title {
+		font-size: 24px;
+		margin-left: 8px;
+		display: block;
+	}
+	.medium-smallblock {
+		margin: 0px 0px;
+		padding: 0px 0px;
+		width: 100%;
+		height: 135px;
+		display: inline-block;
+	}
+	.medium-a:hover p {
+		color: #008CD6;
+	}
+	.medium-a {
+		overflow: hidden;
+		/*border: 1px solid #000000;*/
+		display: block;
+	}
+	.medium_ {
+		font-weight: lighter;
+		color: #999999;
+		margin: 15px 0px;
+	}
+	.medium-img {
+		width: 125px;
+		height: 105px;
+		margin-left: 10px;
+		float: right;
+	}
+	.zuo {
+		width: 60%;
+		float: left;
+		padding: 0px 0px;
+	}
+	
+	.medium-first-p {
+		font-size: 16px;
+		color: #222222;
+	}
+	.medium-second-p {
+		color: #666666;
+	}
+	.medium-mark {
+		color: #999999;
+		display: inline-block;
+		width: 33.3%;
+		height: 20px;
+		font-weight: bold;
+	}
+	.medium-icon {
+		width: 25px;
+		color: #999999;
+		display: inline-block;
+		cursor: default;
+		height: 30px;
+		float: left;
+	}
+	.medium-icon-weibo {
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -432px -183px;
+	}
+	.medium-icon-weixin {
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -567px -183px;
+	}
+	/*媒体样式结束*/
+	/*页脚样式*/
+	.footer {
+		margin-top: 100px;
+		overflow: hidden;
+		text-align: center;
+		background: #222222;
+		overflow: hidden;
+		width: auto;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.footer-logo {
+		height: auto;
+		width: auto;
+		margin-top: 10px;
+	}
+	.footer-a-icon {
+		text-align: center;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 15px;
+	}
+	.footer-icon,
+	.footer-icon-wb,
+	.footer-icon-wx,
+	.footer-icon-xv,
+	.footer-icon-tb,
+	.footer-icon-xq {
+		margin-top: 0px;
+		background: #666;
+		height: 45px;
+		width: 45px;
+		border: 1px solid #666666;
+		display: inline-block;
+		border-radius: 50%;
+		transition: background-color .3s ease;
+		transition: border-color .3 ease;
+		margin-left: 5%;
+	}
+	.footer-icon-wb:hover {
+		background: #F04545;
+		border: 1px solid #F04545;
+	}
+	.footer-icon-wx:hover {
+		background: #20A900;
+		border: 1px solid #20A900;
+	}
+	.footer-icon-xv:hover {
+		background: #008CD6;
+		border: 1px solid #008CD6;
+	}
+	.footer-icon-tb:hover {
+		background: #2185EE;
+		border: 1px solid #2185EE;
+	}
+	.footer-icon-xq:hover {
+		background: #42B0F4;
+		border: 1px solid #42B0F4;
+	}
+	.footer-b {
+		display: inline-block;
+	}
+	.footer-icon-kf {
+		margin-top: 20px;
+		background: #666;
+		height: 45px;
+		width: 130px;
+		border: 1px solid #999999;
+		display: inline-block;
+		border-radius: 25px;
+		text-align: left;
+		margin-top: 0px;
+		transition: background-color .3s ease;
+	}
+	.footer-icon-kf p {
+		color: #FFFFFF;
+		display: inline-block;
+		white-space: nowrap;
+		text-align: center;
+		margin: -40px 14px;
+		float: right;
+	}
+	.footer-icon-kf:hover {
+		background: #008CD6;
+		border: 1px solid #008CD6;
+	}
+	.footer-icon-weibo {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -420px -80px;
+	}
+	.footer-icon-weixin {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -555px -80px;
+	}
+	.footer-icon-v {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -285px -80px;
+	}
+	.footer-icon-tieba {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -330px -80px;
+	}
+	.footer-icon-xingqu {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -194px -80px;
+	}
+	.footer-icon-kefu {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -243px -83px;
+	}
+	.footer-span {
+		border-left: 1px solid #999999;
+		display: inline-block;
+		width: 195px;
+		height: 45px;
+		margin-left: 5%;
+	}
+	.footer-link {
+		text-align: center;
+		margin-top: 20px;
+	}
+	#footer-a {
+		margin-left: 20px;
+		margin-right: 20px;
+		color: #666666;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	#footer-a:hover {
+		color: #008CD6;
+	}
+	.footer-final {
+		margin-top: 20px;
+	}
+	.footer-p {
+		color: #666666;
+	}
+	/*页脚样式结束*/
+}

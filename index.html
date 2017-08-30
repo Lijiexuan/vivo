@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<title>This is vivo's web.</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/vivo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/middle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/small.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		
+		<!--1.头部：logo和导航以及图标-->
+		<header class="header">
+			<a href="#" class="header-logo-a"><img class="header-logo" src="img/vivo-gb-logo.png" /></a>
+			<a href="#" class="new-version">进入新版vivo官网</a>
+			<nav class="nav collapse navbar-collapse" id="navcollapse">
+				<ul class="ul">
+					<li class="li active" >
+						<a href="#" class="header-nav-a li active">首页</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li header-product">产品</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">商城</a>
+					</li>
+					<li class="li li-tiyanzhongxin">
+						<a href="#" class="header-nav-a li li-tiyanzhongxin">体验中心</a>
+					</li>
+					<li class="li li-Funtouch">
+						<a href="#" class="header-nav-a li li-Funtouch">Funtouch&nbsp;OS</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">社区</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">服务</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header-icon header-icon-kefu" data-toggle="tooltip" title="小V在线客服">
+				<b class="header-icon-service"></b>
+			</a>
+			<a href="#" class="header-icon">
+				<b class="header-icon-search"></b>
+			</a>
+			<a href="#" class="header-icon">
+				<b class="header-icon-personal"></b>
+			</a>
+		</header>
+		<script type="text/javascript">
+			$(function() {
+				$(".header-icon-kefu").tooltip();
+			})
+			$(function() {
+				$("#navcollapse").click(function() {
+					$("#navcollapse").toggleClass("icon-close");
+				})
+			})
+		</script>
+		
+		<!--1.2产品-->
+		<div class="product">
+			<dl class="chanpin">
+                <dt><a href="" class="product-content">最新</a></dt>
+                <dd class="product-dd"><a href="" class="product-content">X9L</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y53</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Xplay6磨砂黑</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">X9i</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y66</a></dd>
+              </dl>
+              <dl class="chanpin">
+                <dt><a href="#" class="product-content">Xplay系列</a></dt>
+                <dd class="product-dd"><a href="" class="product-content">Xplay6磨砂黑</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Xplay6</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Xplay5旗舰版</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Xplay5</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Xplay3S</a></dd>
+              </dl>
+              <dl class="chanpin">
+                <dt><a href="#" class="product-content">X系列</a></dt>
+                <dd class="product-dd"><a href="" class="product-content">X9L</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">X9i</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">X9Plus</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">X9</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">X7</a></dd>
+              </dl>
+              <dl class="chanpin">
+                <dt><a href="#" class="product-content">Y系列</a></dt>
+                <dd class="product-dd"><a href="" class="product-content">Y53</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y66</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y67</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y55</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">Y51电信高配版</a></dd>
+              </dl>
+              <dl class="chanpin">
+                <dt><a href="" class="product-content">其它系列</a></dt>
+                <dd class="product-dd"><a href="" class="product-content">V3全网通</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">V3Max全网通</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">V3Max</a></dd>
+                <dd class="product-dd"><a href="" class="product-content">V3</a></dd>
+                <dd class="product-dd">&nbsp;</dd>
+              </dl>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".header-product, .product").hover(function(){
+					$(".product").css({"display":"block"});
+				},function(){
+					$(".product").css("display","none");
+				})
+			})
+		</script>
+
+		<!--2.轮播图-->
+		<div id="vivo-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#vivo-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#vivo-carousel" data-slide-to="1"></li>
+				<li data-target="#vivo-carousel" data-slide-to="2"></li>
+				<li data-target="#vivo-carousel" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item carousel1 cheight active">
+					<div class="img11">
+						<img src="./img/vm-h-nn0703-title1-small.png">
+					</div>
+					<div class="img12">
+						<img src="./img/vm-h-nn0703-title2-small.png">
+					</div>
+					<div class="img13">
+						<img src="./img/vm-h-nn0703-title3-small.png"> 
+					</div>
+				</div>
+				<div class="item carousel2 cheight">
+					<div class="img21">
+						<img src="./img/vm-h-y66-figure2-small.png">
+					</div>
+				</div>
+				<div class="item carousel3 cheight">
+					<div class="img31">
+						<img src="./img/vm-h-x9plus-figure1-small.jpg">
+					</div>
+					<div class="img32">
+						<img src="./img/vm-h-x9plus-figure2-small.png">
+					</div>
+				</div>
+				<div class="item carousel4 cheight">
+					<div class="img41">
+						<img src="./img/vm-h-x9m-figure1-small.png">
+					</div>
+					<div class="img42">
+						<img src="./img/vm-h-x9m-figure2-small.png">
+					</div>
+					<div class="img43">
+						<img src="./img/vm-h-x9m-title3-v1-small.png">
+					</div>
+					<div class="img44">
+						<img src="./img/vm-h-x9m-title2-v1-small.png">
+					</div>
+					<div class="img45">
+						<img src="./img/vm-h-x9m-title1-v1-small.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+		
+		<!--3.三图并排-->
+		<div class="bigbox">
+			<a href="#" class="smallbox smallbox-width">
+				<img src="img/d53cef438ff4b1d2711c32ae009c44c8.jpg" class="img-responsive" />
+			</a>
+			<div class="smallbox-second">
+				<a href="#" class="smallbox smallbox-video">
+					<img src="img/7468dad010330855102bcccfe218e9bf.jpg" class="img-responsive" />
+				</a>
+				<b class="pic-icon"></b>
+			</div>
+			<a href="#" class="smallbox smallbox-width">
+				<img src="img/6b4191e277ab9fc7190e7d53e19691d6.jpg" class="img-responsive" />
+			</a>
+		</div>
+		
+		<!--4.活动-->
+		<div class="activity">
+			<strong class="activity-title">活动</strong>
+			<div class="tuwen">
+				<a href="#" class="activity-a">
+					<img src="img/de27d9211efd6288607e42e0d6970ea3.jpg" class="img-responsive"/>
+					<p class="one activity-a">倪妮新片抢鲜看</p>
+					<p class="two activity-a">立即抢购</p>
+				</a>
+				<p class="three">___</p>
+				<strong class="activity-mark">商城</strong>
+			</div>
+			<div class="tuwen">
+				<a href="#" class="activity-a">
+					<img src="img/fa435257c22d65205b065308e2f60583.jpg" class="img-responsive"/>
+					<p class="one activity-a">活力蓝</p>
+					<p class="two activity-a">立即抢购</p>
+				</a>
+				<p class="three">___</p>
+				<strong class="activity-mark">社区</strong>
+			</div>
+			<div class="tuwen">
+				<a href="#" class="activity-a">
+					<img src="img/37eb56093e52c9a776ea7934a857f468.jpg" class="img-responsive"/>
+					<p class="one activity-a">6月签到有礼</p>
+					<p class="two activity-a">小v毛绒公仔等你来拿</p>
+				</a>
+				<p class="three">___</p>	
+				<strong class="activity-mark">社区</strong>		
+			</div>
+			<div class="tuwen">
+				<a href="#" class="activity-a">
+					<img src="img/3e2ee6c7bead4b033122f5d3311491cc.jpg" class="img-responsive"/>
+					<p class="one activity-a">毕业狂欢季</p>
+					<p class="two activity-a">抽奖赢X9Plus</p>
+				</a>
+				<p class="three">___</p>
+				<strong class="activity-mark">社区</strong>
+			</div>
+		</div>
+		
+		<!--5.动态-->
+		<div class="trends">
+			<strong class="trends-title">动态</strong>
+			<a href="#" class="trends-smallblock">
+				<img class="trends-img" src="img/c5d9df48b9d5bdd6949ee5a40a096326.jpg"/>
+				<div class="you">
+					<p class="trends-first-p"><em class="news">新闻</em>vivo X9夏日蓝清凉来袭</p>
+					<p>夏日蓝一夏</p>
+					<h5 class="trends-h5">2017.03.20</h5>
+				</div>
+			</a>
+			<a href="#" class="trends-smallblock">
+				<img class="trends-img" src="img/53aebbb5f184c0a903259c2530c27842.jpg"/>
+				<div class="you">
+					<p class="trends-first-p"><em class="news">新闻</em>X9 NBA定制版炫蓝登场</p>
+					<p>给广大NBA球迷的一份大礼</p>
+					<h5 class="trends-h5">2017.03.30</h5>
+				</div>
+			</a>
+			<a href="#" class="trends-smallblock">
+				<img class="trends-img" src="img/2bcb7c814722fb1810c55ff1c01301c1.jpg"/>
+				<div class="you">
+					<p class="trends-first-p"><em class="news">新闻</em>Xplay6联盟KPL王者荣耀</p>
+					<p>成为职业联赛官方赛事用机</p>
+					<h5 class="trends-h5">2016.11.10</h5>
+				</div>
+			</a>
+		</div>
+		
+		<!--6.媒体-->
+		<div class="medium">
+			<strong class="medium-title">媒体</strong>
+			<div class="medium-smallblock">
+				<a href="#" class="medium-a">
+					<img class="medium-img" src="img/941a9ccad1642445eaeef68e14558b89.jpg"/>
+					<div class="zuo">
+						<p class="medium-first-p">vivo智能手机</p>
+						<p class="medium-second-p">vivo X9活力蓝新品上市</p>
+					</div>
+				</a>
+				<p class="medium_">__</p>
+				<strong class="medium-mark"><b class="medium-icon medium-icon-weibo"></b>新浪微博</strong>
+			</div>
+			<div class="medium-smallblock">
+				<a href="#" class="medium-a">
+					<img class="medium-img" src="img/1d86fb0aee12fdc9d217c7a75945519d_125x105!.jpg"/>
+					<div class="zuo">
+						<p class="medium-first-p">爱吃，爱自拍，软萌胖子1个</p>
+						<p class="medium-second-p">爱vivo，爱蓝胖小V</p>
+					</div>
+				</a>
+				<p class="medium_">__</p>
+				<strong class="medium-mark"><b class="medium-icon medium-icon-weibo"></b>新浪微博</strong>
+			</div>
+			<div class="medium-smallblock">
+				<a href="#" class="medium-a">
+					<img class="medium-img" src="img/71ba6dbe84daa6b4ce80f3b19af67c3c_125x105!.jpg"/>
+					<div class="zuo">
+						<p class="medium-first-p">vivo社区</p>
+						<p class="medium-second-p">关于vivo Xplay6库里定制版，你想知道的都在这</p>
+					</div>
+				</a>
+				<p class="medium_">__</p>
+				<strong class="medium-mark"><b class="medium-icon medium-icon-weixin"></b>微信</strong>
+			</div>
+		</div>
+		
+		<!--7.页脚-->
+		<footer class="footer">
+			<img class="footer-logo" src="img/vivo-f-logo.jpg"/>
+			<div class="footer-a-icon">
+				<a href="#" class="footer-icon footer-icon-wb"><b class="footer-b footer-icon-weibo"></b></a>
+				<a href="#" class="footer-icon footer-icon-wx"><b class="footer-b footer-icon-weixin"></b></a>
+				<a href="#" class="footer-icon footer-icon-xv"><b class="footer-b footer-icon-v"></b></a>
+				<a href="#" class="footer-icon footer-icon-tb"><b class="footer-b footer-icon-tieba"></b></a>
+				<a href="#" class="footer-icon footer-icon-xq"><b class="footer-b footer-icon-xingqu"></b></a>
+				<span class="footer-span">
+					<a href="#" class="footer-icon-kf">
+						<b class="footer-b footer-icon-kefu"></b>
+						<p>小V在线客服</p>
+					</a>	
+				</span>
+			</div>
+			<div class="footer-link">
+				<a href="" id="footer-a">新闻中心</a>
+				<a href="" id="footer-a">vivo招聘</a>
+				<a href="" id="footer-a">vivo摄影</a>
+				<a href="" id="footer-a">采购平台</a>
+				<a href="" id="footer-a">开发者平台</a>
+				<a href="" id="footer-a">手机寻回</a>
+				<a href="" id="footer-a">网站地图</a>
+				<a href="" id="footer-a">手机真伪查询</a>
+				<a href="" id="footer-a">免责声明</a>
+				<a href="" id="footer-a">English</a>
+			</div>
+			
+			<div class="footer-final">
+				<p class="footer-p">COPYRIGHT © 1996-2017</p>
+				<p class="footer-p" style="margin-top: -10px;">
+					ALL RIGHTS RESERVED.<a href="" id="footer-a" style="margin-left: 0px;">粤ICP备05100288号-8</a>
+					<a style="margin-left: -15px;" href="" data-toggle="tooltip" title="企业名称：广州步步高电子工业有限公司 法定代表人：甄志强 标识状态：已激活 粤工商备P191704002445"><img src="img/gssw-icon.png"/></a>
+				</p>
+			</div>
+			<script>
+				$(function() {
+					$(".company").tooltip();
+				});
+			</script>
+		</footer>
+	</body>
+</html>

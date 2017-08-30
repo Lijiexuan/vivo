@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*头部的样式*/
+			
+			.header {
+				height: 80px;
+				width: 100%;
+				line-height: 80px;
+				overflow: hidden;
+				display: inline-block;
+				background: #FFFFFF;
+				position: fixed;
+				z-index: 2;
+			}
+			
+			.header-logo-a {
+				width: 95;
+				height: 80px;
+			}
+			
+			.header-logo {
+				float: left;
+				margin-top: 25px;
+				display: inline-block;
+			}
+			
+			.new-version {
+				text-decoration: none;
+				color: #008CD6;
+				font-size: 12px;
+				height: 10px;
+				line-height: 10px;
+				border-radius: 30px;
+				border: 1px #008CD6 solid;
+				padding: 0.7em;
+				margin-left: 20px;
+				display: inline-block;
+				float: left;
+				margin-top: 28px;
+			}
+			
+			.new-version:hover {
+				text-decoration: none;
+				color: #008CD6;
+			}
+			
+			.nav {
+				float: right;
+				height: 80px;
+				width: 5%;
+			}
+			
+			.li {
+				list-style: none;
+				float: left;
+				display: block;
+				height: 45px;
+				width: 100%;
+				line-height: 45px;
+				text-align: center;
+				text-decoration: none;
+			}
+			
+			.li:hover {
+				text-decoration: none;
+				background: #008CD6;
+				color: white;
+				transition: all 0.2s;
+			}
+			
+			.header-nav-a {
+				height: 82px;
+				text-align: center;
+				font-size: 16px;
+				text-decoration: none;
+				color: #666666;
+			}
+			
+			.header-icon {
+				height: 30px;
+				width: 30px;
+				border: 1px solid #666666;
+				border-radius: 50%;
+				display: inline-block;
+				line-height: 38px;
+				margin-left: 10px;
+				margin-top: 25px;
+				text-align: center;
+			}
+			
+			.header-icon-kefu:hover {
+				background: #008CD6;
+			}
+			
+			.header-icon-kefu:hover b {
+				background-position: -253px -92px;
+			}
+			
+			.header-icon-service {
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				background-image: url(img/vivo-gb-ico.png);
+				background-position: -35px 2px;
+			}
+			
+			.header-icon-search {
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				background-image: url(img/vivo-gb-ico.png);
+				background-position: 1px 0px;
+			}
+			
+			.header-icon-personal {
+				height: 20px;
+				width: 20px;
+				display: inline-block;
+				background-image: url(img/vivo-gb-ico.png);
+				background-position: -17px 0px;
+			}
+			
+			#btn {
+				background: #ffffff;
+				border: 0px;
+				float: right;
+				height: 45px;
+				width: 45px;
+				margin-top: 20px;
+			}
+			
+			.icon-open {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: none;
+				background-image: url(img/vivo-gb-ico.png);
+				background-position: 0px -35px;
+				text-align: center;
+				margin-left: 10px;
+			}
+			
+			.icon-close {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: none;
+				background-image: url(img/vivo-gb-ico.png);
+				background-position: -27px -40px;
+			}
+			
+			#btn {
+				text-align: center;
+			}
+			/*头部样式结束*/
+		</style>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header class="header">
+			<a href="#" class="header-logo-a"><img class="header-logo" src="img/vivo-gb-logo.png" /></a>
+			<a href="#" class="new-version">进入新版vivo官网</a>
+			<a href="#" class="header-icon header-icon-kefu" data-toggle="tooltip" title="小V在线客服">
+				<b class="header-icon-service"></b>
+			</a>
+			<a href="#" class="header-icon">
+				<b class="header-icon-search"></b>
+			</a>
+			<a href="#" class="header-icon">
+				<b class="header-icon-personal"></b>
+			</a>
+			<button type="button" id="btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcollapse">
+				<span class="icon-open"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navcollapse">
+				<ul id="myTab" class="nav navbar-nav">
+					<li class="li-active">
+						<a href="#">首页</a>
+					</li>
+					<li class="li-active">
+						<a href="">产品</a>
+					</li>
+					<li class="li-active">
+						<a href="">商城</a>
+					</li>
+					<li class="li-active">
+						<a href="">体验中心</a>
+					</li>
+					<li class="li-active">
+						<a href="">Funtouch OS</a>
+					</li>
+					<li class="li-active">
+						<a href="">社区</a>
+					</li>
+					<li class="li-active">
+						<a href="">服务</a>
+					</li>
+				</ul>
+			</div>
+			<!--<nav class="nav">
+				<ul class="ul">
+					<li class="li">
+						<a href="#" class="header-nav-a li">首页</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">产品</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">商城</a>
+					</li>
+					<li class="li li-tiyanzhongxin">
+						<a href="#" class="header-nav-a li li-tiyanzhongxin">体验中心</a>
+					</li>
+					<li class="li li-Funtouch">
+						<a href="#" class="header-nav-a li li-Funtouch">Funtouch&nbsp;OS</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">社区</a>
+					</li>
+					<li class="li">
+						<a href="#" class="header-nav-a li">服务</a>
+					</li>
+				</ul>
+			</nav>-->
+
+		</header>
+		<script type="text/javascript">
+			$(function() {
+				$(".header-icon-kefu").tooltip();
+			})
+			
+			$(function(){
+				$("#btn").click(function(){
+					$("#navcollapse").fadeToggle(500);
+					$("#btn>span").toggleClass("icon-close");
+				})
+			})
+		</script>
+	</body>
+
+</html>

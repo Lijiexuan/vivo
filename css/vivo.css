@@ -1,0 +1,710 @@
+@media only screen and (min-width: 988px) {
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	/*头部的样式*/
+	.header {
+		height: 80px;
+		width: 100%;
+		line-height: 80px;
+		overflow: hidden;
+		display: inline-block;
+		background: #FFFFFF;
+		position: fixed;
+		z-index: 2;
+	}
+	.header-logo-a {
+		width: 95;
+		height: 80px;
+	}
+	.header-logo {
+		float: left;
+		margin-top: 25px;
+		display: inline-block;
+	}
+	.new-version {
+		text-decoration: none;
+		color: #008CD6;
+		font-size: 12px;
+		height: 26px;
+		line-height: 10px;
+		border-radius: 30px;
+		border: 1px #008CD6 solid;
+		padding: 0.7em;
+		margin-left: 20px;
+		display: inline-block;
+		float: left;
+		margin-top: 28px;
+	}
+	.new-version:hover {
+		text-decoration: none;
+		color: #008CD6;
+	}
+	.nav {
+		float: left;
+		height: 80px;
+		width: 65%;
+		margin-left: 75px;
+	}
+	.li {
+		list-style: none;
+		float: left;
+		display: inline-block;
+		height: 82px;
+		width: 84px;
+		line-height: 82px;
+		text-align: center;
+		text-decoration: none;
+	}
+	.li-tiyanzhongxin {
+		width: 120px;
+	}
+	.li-Funtouch {
+		width: 150px;
+	}
+	.li:hover {
+		text-decoration: none;
+		background: #008CD6;
+		color: white;
+		transition: all 0.2s;
+	}
+	.li:focus {
+		text-decoration: none;
+	}
+	.active .li {
+		background: #0086CD;
+		color: white;
+	}
+	.header-nav-a {
+		height: 82px;
+		text-align: center;
+		font-size: 16px;
+		text-decoration: none;
+		color: #666666;
+	}
+	.header-icon {
+		height: 30px;
+		width: 30px;
+		border: 1px solid #666666;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 38px;
+		margin-left: 10px;
+		margin-top: 25px;
+		text-align: center;
+	}
+	.header-icon-kefu:hover {
+		background: #008CD6;
+	}
+	.header-icon-kefu:hover b {
+		background-position: -253px -92px;
+	}
+	.header-icon-service {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -35px 2px;
+	}
+	.header-icon-search {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: 1px 0px;
+	}
+	.header-icon-personal {
+		height: 20px;
+		width: 20px;
+		display: inline-block;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -17px 0px;
+	}
+	/*头部样式结束*/
+	/*产品*/
+	.product {
+		position: absolute;
+		top: 80px;
+		left: 0;
+		z-index: 9000;
+		display: none;
+		/*height: auto;*/
+		width: 100%;
+		/*height: 200px;*/
+		padding: 0;
+		padding-top: 80px;
+		/*margin-left: -7%;*/
+		text-align: center;
+		background: #FFFFFF;
+	}
+	.chanpin {
+		display: inline-block;
+		text-align: left;
+		margin-left: 10%;
+	}
+	.product-dd {
+		margin-top: 5px;
+	}
+	.product-content {
+		color: #666666;
+		text-decoration: none;
+		font-size: 16px;
+		transition: color 0.5s;
+	}
+	.product-content:hover {
+		color: #008CD6;
+		text-decoration: none;
+	}
+	/*轮播图样式*/
+	#vivo-carousel {
+		clear: all;
+		margin-top: 0px;
+		padding-top: 80px;
+	}
+	.carousel-indicators .active {
+		background-color: #008CD6;
+	}
+	.cheight{
+		height: 720px;
+		background-repeat: no-repeat;
+	}
+	.carousel1{
+		background-image: url(../img/vm-h-nn0703-bg-small.jpg);
+	}
+	.carousel2{
+		background-image: url(../img/vm-h-x9m-figure1-small.png);
+	}
+	.carousel3{
+		/*background-image: url(../img/vm-h-x9plus-figure2-small.png);*/
+	}
+	.carousel4{
+		/*background-image: url(../img/vm-h-x9m-figure2-small.png);*/
+	}
+	.carouselchar{
+		position: relative;
+		display: block;
+		top: 120px;
+		left: 140px;
+		width: 100%;
+		height: 100px;
+		opacity: 1;
+		visibility: hidden;
+	}
+	.img11{
+		position: relative;
+		top: 30%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.active .img11{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 1s;
+	}
+	.img12{
+		position: relative;
+		top: 32%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;	
+	}
+	.active .img12{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 1.5s;
+	}
+	.img13{
+		position: relative;
+		top: 35%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+		
+	}
+	.active .img13{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 2s;
+	}
+	.img21{
+		position: relative;
+		top: 13%;
+		left: 32%;
+		height: 100%;
+		width: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+	.active .img21{
+		left: 28%;
+		transition: all 1s ease 1s;
+	}
+	.img31{
+		position: relative;
+		top: -60%;
+		left: 20%;
+		height: 100%;
+		width: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+	.active .img31{
+		top: -45%;
+		transition: all 1s ease 1s;
+	}
+	.img32{
+		position: relative;
+		top: -100%;
+		left: 42%;
+		height: 100%;
+		width: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+	.active .img32{
+		top: -115%;
+		transition: all 1s ease 1s;
+	}
+	.img41{
+		position: relative;
+		top: 8%;
+		left: 0;
+		height: 100%;
+		width: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+	.active .img41{
+		left: 5%;
+		transition: all 1s ease 1s;
+	}
+	.img42{
+		position: relative;
+		top: -105%;
+		left: 22%;
+		height: 100%;
+		width: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+	.active .img42{
+		left: 17%;
+		transition: all 1s ease 1s;
+	}
+	.img43{
+		position: relative;
+		top: -170%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.active .img43{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 1s;
+	}
+	.img44{
+		position: relative;
+		top: -168%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.active .img44{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 1.5s;
+	}
+	.img45{
+		position: relative;
+		top: -166%;
+		left: 60%;
+		width: 100%;
+		height: auto;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.active .img45{
+		opacity: 1;
+		visibility: visible;
+		transition: all 1s ease 2s;
+	}
+	/*轮播图样式结束*/
+	/*三图并排样式*/
+	.bigbox {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		margin: 0px 0px;
+		/*z-index: 2;*/
+	}
+	.smallbox {
+		height: auto;
+		display: inline-block;
+		float: left;
+	}
+	.smallbox-width{
+		width: 33.33333%;
+	}
+	.smallbox-second{
+		width: 33.33%;
+		height: auto;
+		background: #000000;
+		float: left;
+	}
+	.smallbox-video{
+		width: 100%;
+	}
+	.pic-icon {
+		height: 82px;
+		width: 82px;
+		border: 1px solid #FFFFFF;
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 82px;
+		text-align: center;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -420px 0px;
+		z-index: 1;
+		position: absolute;
+		margin: 6% -20%;
+	}
+	/*三图并排样式结束*/
+	/*活动样式*/
+	.activity {
+		margin-top: 100px;
+		overflow: hidden;
+	}
+	.activity-title {
+		font-size: 26px;
+		display: block;
+		margin-left: 8px;
+	}
+	.tuwen {
+		width: 24%;
+		height: auto;
+		display: inline-block;
+		float: left;
+		margin-left: 0.8%;
+	}
+	.activity-a {
+		width: 100%;
+		height: auto;
+		text-decoration: none;
+		display: inline-block;
+	}
+	.one {
+		font-size: 18px;
+		text-decoration: none;
+		color: #666666;
+	}
+	.two {
+		color: #666666;
+	}
+	.activity-a:hover p {
+		color: #008CD6;
+		text-decoration: none;
+	}
+	.three {
+		color: #666666;
+		margin-top: 15px;
+	}
+	.activity-mark {
+		color: #999999;
+	}
+	/*活动样式结束*/
+	/*动态样式*/
+	.trends {
+		margin-top: 100px;
+		overflow: hidden;
+	}
+	.trends-title {
+		font-size: 26px;
+		display: block;
+		margin-left: 8px;
+	}
+	.trends-smallblock {
+		width: 33.33%;
+		display: inline-block;
+		height: 100px;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+	.trends-img {
+		float: left;
+		margin-left: 10px;
+	}
+	.you {
+		float: left;
+		color: #666666;
+		margin-left: 10px;
+	}
+	.trends-smallblock:hover p {
+		color: #008CD6;
+	}
+	.news {
+		border-radius: 5px;
+		border: 1px solid;
+		font-size: 12px;
+		width: 50px;
+		height: 30px;
+		line-height: 20px;
+		padding: 4px;
+		font-style: normal;
+		background: #008CD6;
+		color: #FFFFFF;
+		margin-right: 5px;
+	}
+	.trends-h5 {
+		margin-top: 28px;
+		color: #999;
+	}
+	.trends-first-p {
+		white-space: nowrap;
+		overflow: hidden;
+		width: 90%;
+		text-overflow: ellipsis;
+		color: #222222;
+		font-size: 16px;
+	}
+	/*动态样式结束*/
+	/*媒体样式*/
+	.medium {
+		/*clear: both;*/
+		margin-top: 150px;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+	.medium-title {
+		font-size: 24px;
+		margin-left: 8px;
+		display: block;
+	}
+	.medium-smallblock {
+		margin: 0px 0px;
+		padding: 0px 0px;
+		width: 33%;
+		height: 135px;
+		display: inline-block;
+	}
+	.medium-a:hover p {
+		color: #008CD6;
+	}
+	.medium-a {
+		overflow: hidden;
+		/*border: 1px solid #000000;*/
+		display: block;
+	}
+	.medium_ {
+		font-weight: lighter;
+		color: #999999;
+		margin: 15px 0px;
+	}
+	.medium-img {
+		width: 125px;
+		height: 105px;
+		margin-left: 10px;
+		float: right;
+	}
+	.zuo {
+		width: 60%;
+		float: left;
+		padding: 0px 0px;
+	}
+	
+	.medium-first-p {
+		font-size: 16px;
+		color: #222222;
+	}
+	.medium-second-p {
+		color: #666666;
+	}
+	.medium-mark {
+		color: #999999;
+		display: inline-block;
+		width: 33.3%;
+		height: 20px;
+		font-weight: bold;
+	}
+	.medium-icon {
+		width: 25px;
+		color: #999999;
+		display: inline-block;
+		cursor: default;
+		height: 30px;
+		float: left;
+	}
+	.medium-icon-weibo {
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -432px -183px;
+	}
+	.medium-icon-weixin {
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -567px -183px;
+	}
+	/*媒体样式结束*/
+	/*页脚样式*/
+	.footer {
+		margin-top: 100px;
+		overflow: hidden;
+		text-align: center;
+		background: #222222;
+		overflow: hidden;
+		width: auto;
+		height: auto;
+		padding-bottom: 50px;
+	}
+	.footer-logo {
+		height: auto;
+		width: auto;
+		margin-top: 10px;
+	}
+	.footer-a-icon {
+		text-align: center;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 15px;
+	}
+	.footer-icon,
+	.footer-icon-wb,
+	.footer-icon-wx,
+	.footer-icon-xv,
+	.footer-icon-tb,
+	.footer-icon-xq {
+		margin-top: 0px;
+		background: #666;
+		height: 45px;
+		width: 45px;
+		border: 1px solid #666666;
+		display: inline-block;
+		border-radius: 50%;
+		transition: background-color .3s ease;
+		transition: border-color .3 ease;
+		margin-left: 5%;
+	}
+	.footer-icon-wb:hover {
+		background: #F04545;
+		border: 1px solid #F04545;
+	}
+	.footer-icon-wx:hover {
+		background: #20A900;
+		border: 1px solid #20A900;
+	}
+	.footer-icon-xv:hover {
+		background: #008CD6;
+		border: 1px solid #008CD6;
+	}
+	.footer-icon-tb:hover {
+		background: #2185EE;
+		border: 1px solid #2185EE;
+	}
+	.footer-icon-xq:hover {
+		background: #42B0F4;
+		border: 1px solid #42B0F4;
+	}
+	.footer-b {
+		display: inline-block;
+	}
+	.footer-icon-kf {
+		margin-top: 20px;
+		background: #666;
+		height: 45px;
+		width: 130px;
+		border: 1px solid #999999;
+		display: inline-block;
+		border-radius: 25px;
+		text-align: left;
+		margin-top: 0px;
+		transition: background-color .3s ease;
+	}
+	.footer-icon-kf p {
+		color: #FFFFFF;
+		display: inline-block;
+		white-space: nowrap;
+		text-align: center;
+		margin: -40px 14px;
+		float: right;
+	}
+	.footer-icon-kf:hover {
+		background: #008CD6;
+		border: 1px solid #008CD6;
+	}
+	.footer-icon-weibo {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -420px -80px;
+	}
+	.footer-icon-weixin {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -555px -80px;
+	}
+	.footer-icon-v {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -285px -80px;
+	}
+	.footer-icon-tieba {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -330px -80px;
+	}
+	.footer-icon-xingqu {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -194px -80px;
+	}
+	.footer-icon-kefu {
+		width: 45px;
+		height: 45px;
+		background-image: url(../img/vivo-gb-ico.png);
+		background-position: -243px -83px;
+	}
+	.footer-span {
+		border-left: 1px solid #999999;
+		display: inline-block;
+		width: 195px;
+		height: 45px;
+		margin-left: 5%;
+	}
+	.footer-link {
+		text-align: center;
+		margin-top: 20px;
+	}
+	#footer-a {
+		margin-left: 20px;
+		margin-right: 20px;
+		color: #666666;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+	#footer-a:hover {
+		color: #008CD6;
+	}
+	.footer-final {
+		margin-top: 20px;
+	}
+	.footer-p {
+		color: #666666;
+	}
+	/*页脚样式结束*/
+}

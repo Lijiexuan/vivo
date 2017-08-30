@@ -1,0 +1,185 @@
+/*右边样式*/
+.you{
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	width: 160px;
+	margin-top: 15px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 16px;
+}
+
+.right{
+	position: relative;
+	display: inline-block;
+}
+
+#QQ{
+	background: #5CA3E1;
+}
+			
+#QQ:hover{
+	background: #3686CC;
+}
+			
+#wechat{
+	background: #47C90E;
+}
+			
+#wechat:hover{
+	background: #00A200;
+}
+			
+#blog{
+	background: #ff7777;
+}
+			
+#blog:hover{
+	background: #F04141;
+}
+			
+#renren{
+	background: #6a9bec;
+}
+			
+#renren:hover{
+	background: #4380E6;
+}
+			
+#kefu{
+	background: #3fcef0;
+}
+			
+#kefu:hover{
+	background: #3FCEF0;
+}
+
+.icon{
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin-right: 13px;
+	position: relative;
+	top: -1px;
+	left: -8px;
+	vertical-align: middle;
+	line-height: 48px;
+	background-image: url(../img/vivo-loginreg-ico.png);
+}
+
+.imgQQ{
+	background-position: -42px -96px;
+	border-right: 1px solid #589cd8;
+	left: -12px;
+}
+
+.imgwechat{
+	background-position: -99px -155px;
+	border-right: 1px solid #3ab500;
+}
+
+.imgblog{
+	background-position: -42px 0px;
+	border-right: 1px solid #f57272;
+}
+
+.imgrenren{
+	background-position: -42px -144px;
+	border-right: 1px solid #6695e3;
+}
+
+.imgkefu{
+	background-position: -92px -96px;
+	border-right: 1px solid #35c1e3;
+}
+
+.imglxr{
+	background-position: 0px 0px;
+}
+
+
+
+/*左边样式*/
+.zuo{
+	border: 1px solid green;
+	height: 45px;
+	width: 350px;
+	border: none;
+	margin-top: 15px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.register{
+	background: #7FC5EA;
+}
+
+.register:hover{
+	background: #99DFF7;
+}
+
+.login{
+	background: #008CD6;
+}
+			
+.login:hover{
+	background: #00AAFF;
+}
+
+/*邮箱手机号+密码*/
+.bg{
+	background: #E0E0E0;
+	height: 50px;
+	width: 355px;
+	border: none;
+	margin-top: 15px;
+	display: block;
+}
+
+.null{
+	color: #F04141;
+	font-size: 12px;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.w50{
+	width: 50%;
+	
+}
+
+#a{
+	color: #666666;
+	text-decoration: none;
+}
+
+#a:hover{
+	color: #008CD6;
+}
+
+.maxbox{
+	height: 400px;
+	width: 980px;
+	position: fixed;
+}
+
+.left{
+	float: left;
+	height: auto;
+	width: auto;
+	margin-left: 12%;
+}
+.right{
+	float: left;
+	height: auto;
+	width: auto;
+	margin: -22px 30px;
+}
